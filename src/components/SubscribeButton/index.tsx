@@ -5,8 +5,8 @@ import { getStripeJs } from '../../services/stripe-js';
 import styles from './styles.module.scss';
 
 export function SubscribeButton() {
-  const [session] = useSession(); // use this line for pass test
-  //const { data: session } = useSession(); // use this line for live preview
+  //const [session] = useSession(); // use this line for pass test
+  const { data: session } = useSession(); // use this line for live preview
   const router = useRouter();
 
   async function handleSubscribe() {

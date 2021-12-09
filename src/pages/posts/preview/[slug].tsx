@@ -18,8 +18,8 @@ interface PostPreviewProps {
 }
 
 export default function PostPreview({ post }: PostPreviewProps) {
-  const [session] = useSession(); // use this line for pass test
-  //const { data: session } = useSession(); // use this line for live preview
+  // const [session] = useSession(); // use this line for pass test
+  const { data: session } = useSession(); // use this line for live preview
   const router = useRouter();
 
   useEffect(() => {
